@@ -6,8 +6,8 @@ $(TARGET): main.go go.sum nanowriter.go
 	go build -o $(TARGET) .
 
 go.sum:
-	go get
-	go get .
+	go install
+	go install .
 
 clean:
 	$(RM) $(TARGET) go.sum
